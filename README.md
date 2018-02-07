@@ -5,7 +5,7 @@
 
 
 
-![demo](.\demo.jpg)
+![demo](./demo.jpg)
 
 
 
