@@ -1,0 +1,48 @@
+/* pages/game/game.wxss */
+.computerSize {
+  width: 150rpx;
+  height: 150rpx;
+  border: 2px solid #333;
+  margin-top: -50px;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 18px;
+}
+
+.textContent {
+  margin-top: 3rem;
+}
+
+.humanSizeBox{
+  display: inline-block;
+  margin-top: 50px;
+}
+.humanChoice{
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  border: 2px solid #333;
+  text-align: center;
+  line-height: 150rpx;
+}
+
+.humanChoiceMid {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.yourChoice{
+  background: #000;
+  color: #fff;
+}
+
+.TimeBox{
+  margin-top: 50px;
+}
+.Time {
+  display: inline;
+}
+
+.gobtn{
+  margin-top: 30px;
+  background: yellow;
+}

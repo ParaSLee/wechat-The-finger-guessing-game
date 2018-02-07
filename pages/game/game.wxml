@@ -1,0 +1,25 @@
+<!--pages/game/game.wxml-->
+<view class='container'>
+  <view class='computerSize'> {{computerChoice}} </view>
+
+  <view class="textContent">{{ alertTxt }}</view>
+  
+  <view class="humanSize">
+    <view class="humanSizeBox" wx:for="{{yourChoice}}" wx:key="{{item.val}}">
+      <view data-choice="{{ index }}" 
+      class="humanChoice  {{human==index ? 'yourChoice':''}}"
+      wx:if="{{index !== 1}}" 
+      bindtap='showResult' >{{item.name}}</view>
+      <view  data-choice="{{ index }}" 
+      class="humanChoice humanChoiceMid {{human==index ? 'yourChoice':''}}" 
+      wx:else 
+      bindtap='showResult'>{{item.name}}</view>
+    </view>
+  </view>
+  <view class="TimeBox">
+    <view class="Time">WIN：{{ winTime }}</view>
+    <view class="Time humanChoiceMid">LOSE：{{ loseTime }}</view>
+    <view class="Time">DOGFALL：{{ dogfallTime }}</view>
+  </view>
+  <button class="gobtn" wx:if="{{hiddenContent === false}}"  bindtap='goypage'>{{btnTxt}} </button>
+</view>
